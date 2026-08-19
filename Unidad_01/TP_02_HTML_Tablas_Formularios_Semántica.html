@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Clínica MediLife</title>
+</head>
+<body>
+     <header>
+         <h1>Clínica MediLife</h1>
+         <p>Su salud a nuestro servicio</p>
+         <nav>
+             <a href="#planes">Planes</a>
+             <a href="#contacto">Contacto</a>
+             <a href="#nosotros">Sobre nosotros</a>
+         </nav>
+     </header><br>
+    
+     <main>
+        <hr>
+         <section id="planes">
+             <h2>Nuestros planes</h2>
+             <table border="1">
+                 <thead>
+                     <tr>
+                        <th scope="col">Planes</th>
+                        <th scope="col">Cobertura</th>
+                        <th scope="col">Asistencia</th>
+                        <th scope="col">Precio</th>
+                     </tr>
+                 </thead>
+                 <tbody>
+                     <tr>
+                        <th scope="row">Básico</th>
+                        <td>Nacional</td>
+                        <td>Presencial</td>
+                        <td>60.000</td>
+                     </tr>
+                     <tr>
+                        <th scope="row">Estándar</th>
+                        <td>Regional</td>
+                        <td>Presencial, Domiciliaria</td>
+                        <td>100.000</td>
+                     </tr>
+                      <tr>
+                        <th scope="row">Premium</th>
+                        <td>Global</td>
+                        <td>Presencial, Domiciliaria, Internación</td>
+                        <td>150.000</td>
+                     </tr>
+                 </tbody>
+             </table>
+         </section>
+         <br><hr>
+        
+         <section id="contacto">
+             <h2>Contactanos</h2>
+             <form action="#" method="get">
+                 <label for="nombre">Nombre completo:</label>
+                 <input type="text" id="nombre" name="nombre" placeholder="Ej: Juan Pérez" required
+                 title="Solo letras, mínimo 3 caracteres"><br><br>
+                
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="Ej: juan@mail.com" required><br><br>
+                
+                
+                <label for="plan">Plan</label><br>
+                <select name="plan" id="plan" required>
+                    <option value="basico">Básico</option>
+                    <option value="estandar">Estándar</option>
+                    <option value="premium">Premium</option>
+                    <option value="sinplan">Sin plan</option>
+                </select><br><br>
+             <fieldset>
+             <legend>Tipo de consulta</legend>
+                <input type="radio" id="asistencia" name="tipo_consulta" value="asistencia" required>
+                <label for="asistencia">Asistencia</label><br>
+                <input type="radio" id="consulta" name="tipo_consulta" value="consulta" required>
+                <label for="consulta">Consulta</label><br>
+                <input type="radio" id="reclamo" name="tipo_consulta" value="reclamo" required>
+                <label for="reclamo">Reclamo</label><br>
+             </fieldset><br><br>
+            
+                <label for="mensaje">Mensaje:</label><br>
+                <textarea id="mensaje" name="mensaje" rows="4" cols="70" required
+                placeholder="Escriba su mensaje aquí..."></textarea><br><br>
+                
+                <input type="checkbox" id="ofertas" name="ofertas" value="yes">
+                <label for="ofertas">Recibir ofertas y novedades</label><br><br>
+             <button type="submit">Enviar</button>
+             </form>
+         </section><br><br>
+         <hr>
+         <section id="nosotros">
+             <h2>Sobre nosotros</h2>
+            <p>Somos una empresa familiar con más de 15 años acompañando a nuestros afiliados en cada etapa de su vida. <br>
+            Contamos con una red de prestadores en todo el país y un equipo de atención al cliente disponible para <br>
+            resolver tus consultas. Nuestro compromiso es brindarte cobertura médica de calidad, a un precio <br>
+            accesible y sin letra chica.</p>
+         </section>
+     </main>
+     <br><hr>
+     <footer>
+       <p>© Derechos reservados. MediLife®</p>
+     </footer>
+</body>
+</html>
