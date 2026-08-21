@@ -1,0 +1,105 @@
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Panel de administración</title>
+</head>
+<body>
+     <header>
+         <h1>Panel de administración</h1>
+         <nav>
+         <ul>
+            <li><a href="index.html">Volver a la tienda</a></li>
+            <li><a href="#">Cerrar sesión</a></li>
+        </ul>
+        </nav>
+     </header>
+     <hr>
+     <main>
+         <section id="gestion">
+             <h2>Gestión de productos</h2>
+             
+             <button type="button">Nuevo producto +</button>
+             
+             <table border="1">
+                 <thead>
+                     <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Imagen</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Categoria</th>
+                        <th scope="col">Precio</th>
+                        <th scope="col">Stock</th>
+                        <th scope="col">Acciones</th>
+                     </tr>
+                 </thead>
+                 <tbody>
+                     <tr>
+                        <th scope="row">1</th>
+                        <td><img src="assets/burritomassive.jpg" alt="Burrito Masive" width="50px"></td>
+                        <td>Burrito Massive</td>
+                        <td>Burritos</td>
+                        <td>$ 20.000,00</td>
+                        <td>10</td>
+                        <td><a href="#">Editar</a> │ <a href="#">Eliminar</a></td>
+                     </tr>
+                     <tr>
+                        <th scope="row">2</th>
+                        <td><img src="assets/tacopastor.jpg" alt="Tacos al pastor" width="50px"></td>
+                        <td>Tacos al pastor</td>
+                        <td>Tacos</td>
+                        <td>$ 16.000,00</td>
+                        <td>15</td>
+                        <td><a href="#">Editar</a> │ <a href="#">Eliminar</a></td>
+                     </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td><img src="assets/nachosguacamole.jpg" alt="Nachos con guacamole" width="50px"></td>
+                        <td>Nachos con guacamole</td>
+                        <td>Acompañamientos</td>
+                        <td>$ 15.000,00</td>
+                        <td>12</td>
+                        <td><a href="#">Editar</a> │ <a href="#">Eliminar</a></td>
+                     </tr>
+                 </tbody>
+             </table>
+             <hr>
+             <details>
+                 <summary>Agregar producto rápido</summary><br>
+                 <form action="#" method="get">
+                     <label for="nombre">Nombre del producto:</label>
+                     <input type="text" id="nombre" name="nombre" placeholder="Ej: Chilaquiles" required><br>
+                     
+                     <label for="precio">Precio:</label>
+                     <input type="number" id="precio" name="precio" required><br>
+                     
+                     <label for="stock">Stock:</label>
+                     <input type="number" id="stock" name="stock" required><br>
+                     
+                    <label for="categoria">Categoría:</label>
+                    <select name="categoria" id="categoria" required>
+                        <option value="default" disabled="" selected="">Seleccione una opción...</option>
+                        <option value="burritos">Burritos</option>
+                        <option value="tacos">Tacos</option>
+                        <option value="acompaniamientos">Acompañamientos</option>
+                        <option value="bebidas">Bebidas</option>
+                    </select><br>
+                 
+                    <label for="descripcion">Descripción:</label><br>
+                    <textarea id="descripcion" name="descripcion" rows="4" cols="60" required
+                    placeholder="Ingrese los ingredientes..."></textarea><br>
+                    
+                    <button type="submit">Guardar producto</button>
+                 </form>
+                 </details>
+         </section>
+     </main>
+     <footer>
+        <hr>
+        <p>Panel de administración - ©PorcoMex</p>
+     </footer>
+</body>
+</html>
